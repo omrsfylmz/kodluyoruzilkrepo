@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+nav {
+  margin: 20px 0;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: red;
+}
+h2 {
+  color: rebeccapurple;
+}
+h3 {
+  color: burlywood;
+  margin-bottom: 10px;
+}
+p {
+  padding: 20px 30px;
+  text-align: center;
+}

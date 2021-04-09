@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav {
+  margin: 20px 0;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: red;
+}
+section {
+  max-width: 1000px;
+  padding: 0 20px;
+}
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(219, 166, 97);
+}
+p {
+  text-align: center;
+}
