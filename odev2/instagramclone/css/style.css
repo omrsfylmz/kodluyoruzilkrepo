@@ -9,12 +9,14 @@
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
 }
-
+body {
+  background-color: #fafafa;
+}
 nav {
   height: 54px !important;
 }
 .logo {
-  margin-left: 192px;
+  margin-left: 92px;
 }
 input.empty {
   font-family: FontAwesome;
@@ -30,7 +32,9 @@ input.empty {
   font-size: 15px;
   color: black;
 }
-
+.middlearea {
+  max-height: 200px;
+}
 .storyphoto {
   width: 60px;
   height: 60px;
@@ -54,4 +58,15 @@ input.empty {
 .rightpanellinks:hover {
   text-decoration: none;
   color: lightgrey;
+}
+#sticky-sidebar {
+  position: fixed;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex a {
+  width: 75px;
 }
