@@ -1,50 +1,66 @@
-.header {
-  list-style-type: none;
-  margin: 10px;
-  overflow: hidden;
-  margin-right: 16px;
-  font-family: arial,sans-serif;
-  font-size: 13px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.headerli a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 5px 5px;
+body {
+  font-family: arial, sans-serif;
+}
+/* list reversed with transform */
+nav {
+  margin-top: 10px;
+  padding: 6px;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 15px;
   text-decoration: none;
 }
 
-.headerli a:hover {
+.avatar {
+  border-radius: 50%;
+}
+
+nav a:hover {
   text-decoration: underline;
 }
 
 .container {
-  text-align: center;
-  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
-
+.container img {
+  margin-bottom: 20px;
+}
 .search-area {
   background: #fff;
   display: flex;
+  border-radius: 34px;
   border: 1px solid #dfe1e5;
   box-shadow: none;
-  z-index: 3;
   height: 44px;
   margin: 0 auto;
-  margin-top: -77px;
   width: 582px;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .search {
-  flex: 1;
   display: flex;
   padding: 5px 8px 0 16px;
   padding-left: 14px;
+  width: 100%;
 }
 
 .search-img {
@@ -69,6 +85,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  /* border-radius: 50%; */
 }
 
 .input-area {
@@ -88,7 +105,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   word-wrap: break-word;
   outline: none;
   display: flex;
-  flex: 100%;
+  width: 480px;
+  border: none;
   margin-top: -68px;
   font: 16px arial, sans-serif;
   line-height: 34px;
@@ -103,8 +121,30 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   appearance: textfield;
   cursor: text;
 }
-
+.voice {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+  padding: 0 8px;
+}
+.voice img {
+  width: 30px;
+  height: 30px;
+}
+.buttons {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .googlesearch {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
   line-height: 27px;
@@ -113,8 +153,20 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   cursor: pointer;
   user-select: none;
 }
+.googlesearch:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
 
 .feelinglucky {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
   padding: 0 16px;
   line-height: 27px;
   min-width: 54px;
@@ -123,35 +175,36 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   user-select: none;
 }
 
+.feelinglucky:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
 .footer {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #f2f2f2;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-left: -8px;
+
   line-height: 10px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.footerli {
-  float: left;
-}
-
-.footerli a {
-  display: block;
-  color: #70757a;
-  text-align: center;
-  padding: 14px 16px;
+.footer a {
   text-decoration: none;
-  font-family: arial, sans-serif;
+  color: #70757a;
+  padding: 15px;
   font-size: 14px;
-  margin-left: 14px;
-  margin-right: -20px;
 }
 
-.footerli a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
