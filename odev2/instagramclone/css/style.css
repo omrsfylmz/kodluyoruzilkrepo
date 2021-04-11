@@ -15,6 +15,11 @@ body {
 nav {
   height: 54px !important;
 }
+
+.mt-10 {
+  margin-top: 80px;
+}
+
 .logo {
   margin-left: 92px;
 }
