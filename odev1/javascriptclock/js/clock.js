@@ -11,19 +11,19 @@ function showDate() {
     const s = date.getSeconds()
     let session = date.getDay();
 
-    if (session == 1) {
+    if (session === 1) {
         session = "Pazartesi";
-    } else if (session == 2) {
+    } else if (session === 2) {
         session = "Salı";
-    } else if (session == 3) {
+    } else if (session === 3) {
         session = "Çarşamba";
-    } else if (session == 4) {
+    } else if (session === 4) {
         session = "Perşembe";
-    } else if (session == 5) {
+    } else if (session === 5) {
         session = "Cuma";
-    } else if (session == 6) {
+    } else if (session === 6) {
         session = "Cumartesi";
-    } else if (session == 7) {
+    } else if (session === 7) {
         session = "Pazar";
     }
     let currentDate = `${h < 10 ? '0' + h : h}:${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`
